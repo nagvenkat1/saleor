@@ -12,8 +12,8 @@ stages {
     }
     stage('build') {
         steps {
-            sh 'docker image build -t nagvenkat/saleor-dashboard:DEV'
-            sh 'docker image push nagvenkat/saleor-dashboard:DEV .'
+            sh 'docker image build -t nagvenkat/saleor-dashboard:DEV .'
+            sh 'docker image push nagvenkat/saleor-dashboard:DEV'
         }
         }
     }
